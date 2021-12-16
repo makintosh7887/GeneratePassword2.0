@@ -1,0 +1,20 @@
+﻿<Window x:Class="GeneratePassword.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeneratePassword"
+        mc:Ignorable="d"
+        Title="Генератор паролей" Height="321.275" Width="600">
+    <Grid>
+
+        <TextBlock Text="Сгенерированный пароль: " FontSize="20" Width="260" Height="40" Margin="10,10,322,240"  />
+        <TextBox Name="tbOutPass" Height="30" Width="300" Margin="10,50,282,210"   />
+
+        <Button Name="btnGenPassword" Content="Сгенерировать пароль" Background="Green" Foreground="White" Width="170" Margin="10,85,412,175" Click="btnGenPassword_Click"  />
+        <RadioButton Name="RBnumb" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,188,0,0" Height="30" Width="110" Content="Цифры"/>
+        <RadioButton Name="RB2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="59,236,0,0" Content="с нижним"/>
+        <RadioButton Name="RBpr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="133,188,0,0" Content="простой"/>
+        <TextBox Name="tbNumPass" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Margin="472,0,0,0"/>
+    </Grid>
+</Window>
